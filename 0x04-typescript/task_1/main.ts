@@ -1,4 +1,4 @@
-interface teacher {
+interface Teacher {
     firstName: string;
     lastName: string;
     fullTimeEmployee: boolean;
@@ -6,7 +6,7 @@ interface teacher {
     contract: boolean;
 };
 
-const teacher3: teacher = {
+const teacher3: Teacher = {
     firstName: "John",
     lastName: "Doe",
     fullTimeEmployee: false,
@@ -14,4 +14,3 @@ const teacher3: teacher = {
     contract: false,
     
 };
-console.log(teacher3);
