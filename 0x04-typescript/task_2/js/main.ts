@@ -56,3 +56,16 @@ interface DirectorInterface {
     }
     return employee.workTeacherTasks();
   }
+
+  type subjects = 'Math' | 'History' ;
+
+  function teachClass(todayClass: string){
+    if (todayClass === 'Math') {
+      return 'Teaching Math';
+    } else if (todayClass === 'History') {
+      return 'Teaching History';
+    } else {
+      throw new Error('Invalid subject');
+    }
+
+  };
