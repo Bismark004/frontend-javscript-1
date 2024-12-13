@@ -44,7 +44,7 @@ studentList.forEach((student) => {
     const locationCell = document.createElement("td");
     locationCell.textContent = student.location;
     row.appendChild(locationCell);
-}
+})
 
 document.body.appendChild(table);
 

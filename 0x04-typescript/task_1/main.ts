@@ -31,6 +31,39 @@ const director1: Directors = {
     numberOfReport: 10,
 };
 
-function printDirector(firstName: string, lastName: string): string { 
-    return firstName.charAt(0) + '.' + lastName; 
+interface printDirectorFunction {
+    (firstName: string, lastName: string): string;
+}
+
+const printDirector: printDirectorFunction = (firstName, lastName) => {
+    return firstName.charAt(0) + '.' + lastName;
+}
+
+console.log(printDirector('Alice','Johnson'));
+
+//interface studentConstructor
+interface StudentConstructor {
+    firstName: string;
+    lastName: string;
+}
+
+//Interface for the class 
+interface StudentClassInterface {
+    workOnHomeWork(): string;
+    displayName: string;
+}
+
+//Class implementation
+class StudentClass implements StudentClassInterface {
+    firstName: string;
+    lastName: string;
+
+    constructor({firstName, lastName}: StudentConstructor){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    workOnHomeWork(): string {
+        return this.firstName;
+    }
 }
