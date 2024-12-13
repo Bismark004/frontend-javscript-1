@@ -30,3 +30,7 @@ const director1: Directors = {
     fullTimeEmployee: true,
     numberOfReport: 10,
 };
+
+function printDirector(firstName: string, lastName: string): string { 
+    return firstName.charAt(0) + '.' + lastName; 
+}
