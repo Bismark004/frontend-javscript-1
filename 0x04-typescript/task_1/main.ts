@@ -23,3 +23,10 @@ interface Directors  {
     numberOfReport: number;
 }
 
+const director1: Directors = {
+    firstName: "Jane",
+    lastName: "Smith",
+    location: "New York",
+    fullTimeEmployee: true,
+    numberOfReport: 10,
+};
