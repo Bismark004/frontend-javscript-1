@@ -49,12 +49,10 @@ interface DirectorInterface {
     return (employee as Director).workDirectorTasks !== undefined;
   }
   
-  // Function to execute work
+  //Function to execute work based on the employee type
   function executeWork(employee: Director | Teacher): string {
     if (isDirector(employee)) {
       return employee.workDirectorTasks();
     }
     return employee.workTeacherTasks();
   }
-  
-  
