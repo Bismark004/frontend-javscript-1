@@ -57,13 +57,16 @@ interface StudentClassInterface {
 class StudentClass implements StudentClassInterface {
     firstName: string;
     lastName: string;
+    displayName: string; // Added missing property
 
     constructor({firstName, lastName}: StudentConstructor){
         this.firstName = firstName;
         this.lastName = lastName;
+        this.displayName = `${this.firstName} ${this.lastName}`; // Added initialization for displayName
     }
 
     workOnHomeWork(): string {
         return this.firstName;
     }
 }
+
