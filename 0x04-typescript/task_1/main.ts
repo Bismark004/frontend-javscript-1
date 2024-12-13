@@ -14,3 +14,12 @@ const teacher3: Teacher = {
     contract: false,
     
 };
+ 
+interface Directors  {
+    firstName: string;
+    lastName: string;
+    location: string;
+    fullTimeEmployee: boolean;
+    numberOfReport: number;
+}
+
